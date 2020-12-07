@@ -28,12 +28,15 @@ namespace Baloon_Game
             Assembly myAssembly = Assembly.GetExecutingAssembly();
             Stream myStream = myAssembly.GetManifestResourceStream("Baloon_Game.Resources.Balloon.jpg");
             Bitmap bmp_Object = new Bitmap(myStream);
-            Image_showBox.Image = bmp_Object;
-
-
+            Image_ShowBox.Image = bmp_Object;
         }
 
         private void btn_spin_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
