@@ -29,16 +29,15 @@ namespace Baloon_Game
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Game));
             this.btn_load = new System.Windows.Forms.Button();
             this.btn_spin = new System.Windows.Forms.Button();
             this.btn_Soh = new System.Windows.Forms.Button();
             this.btn_sa = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.btn_pg = new System.Windows.Forms.Button();
             this.btn_ex = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.Image_showBox = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.Image_showBox)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_load
@@ -83,16 +82,6 @@ namespace Baloon_Game
             this.btn_sa.Text = "Shoot Away";
             this.btn_sa.UseVisualStyleBackColor = false;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(303, 179);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(248, 190);
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.UseWaitCursor = true;
-            // 
             // linkLabel1
             // 
             this.linkLabel1.ActiveLinkColor = System.Drawing.Color.Lime;
@@ -127,23 +116,31 @@ namespace Baloon_Game
             this.btn_ex.Text = "Exit\r\n";
             this.btn_ex.UseVisualStyleBackColor = false;
             // 
+            // Image_showBox
+            // 
+            this.Image_showBox.Location = new System.Drawing.Point(317, 152);
+            this.Image_showBox.Name = "Image_showBox";
+            this.Image_showBox.Size = new System.Drawing.Size(220, 234);
+            this.Image_showBox.TabIndex = 8;
+            this.Image_showBox.TabStop = false;
+            // 
             // Form_Game
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.RosyBrown;
             this.ClientSize = new System.Drawing.Size(891, 562);
+            this.Controls.Add(this.Image_showBox);
             this.Controls.Add(this.btn_spin);
             this.Controls.Add(this.btn_ex);
             this.Controls.Add(this.btn_pg);
             this.Controls.Add(this.linkLabel1);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btn_sa);
             this.Controls.Add(this.btn_Soh);
             this.Controls.Add(this.btn_load);
             this.Name = "Form_Game";
             this.Text = "Game_Project";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Image_showBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -155,10 +152,10 @@ namespace Baloon_Game
         private System.Windows.Forms.Button btn_spin;
         private System.Windows.Forms.Button btn_Soh;
         private System.Windows.Forms.Button btn_sa;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Button btn_pg;
         private System.Windows.Forms.Button btn_ex;
+        private System.Windows.Forms.PictureBox Image_showBox;
     }
 }
 

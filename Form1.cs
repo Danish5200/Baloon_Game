@@ -25,7 +25,12 @@ namespace Baloon_Game
             btn_spin.Enabled = true;
             btn_load.Enabled = false;
 
-            
+            Assembly myAssembly = Assembly.GetExecutingAssembly();
+            Stream myStream = myAssembly.GetManifestResourceStream("Baloon_Game.Resources.Balloon.jpg");
+            Bitmap bmp_Object = new Bitmap(myStream);
+            Image_showBox.Image = bmp_Object;
+
+
         }
 
         private void btn_spin_Click(object sender, EventArgs e)
