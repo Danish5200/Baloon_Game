@@ -10,11 +10,27 @@ using System.Windows.Forms;
 
 namespace Baloon_Game
 {
-    public partial class Form1 : Form
+    public partial class Form_Game : Form
     {
-        public Form1()
+        public Form_Game()
         {
             InitializeComponent();
+            btn_spin.Enabled = false;
+            btn_Soh.Enabled = false;
+            btn_sa.Enabled = false;
+            
+        }
+        private void btn_load_Click(object sender, EventArgs e)
+        {
+            btn_spin.Enabled = true;
+            btn_load.Enabled = false;
+
+            
+        }
+
+        private void btn_spin_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
